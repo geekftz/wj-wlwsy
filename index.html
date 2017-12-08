@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>物联网首页</title>
+    <!-- <link href="styles/bootstrap.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="styles/wlw.css">
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- 轮播2样式 -->
+	<link type="text/css" rel="Stylesheet" href="styles/imageflow.css" />
+</head>
+
+
+	<style>
+		.navbar.navbar-inverse.navbar-fixed-top{
+			background: linear-gradient(to right,#272c31, #3a434c);
+
+		}
+
+	</style>
+<body>
+<!-- 顶部导航 -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+    <div class="container">
+        <div class="navbar-header">   
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>  
+            <a class="navbar-brand" href="#" style="padding:10px"> <img src="images/logo1.png" alt="1"> </a>
+		</div>
+		
+        <div class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#ad-carousel">首页</a></li>
+                <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">产品服务<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#feature-tab" data-tab="tab-chrome">设备接入</a></li>
+                            <li><a href="#feature-tab" data-tab="tab-firefox">设备管理</a></li>
+                            <li><a href="#feature-tab" data-tab="tab-safari">设备适配器</a></li>
+                            <li><a href="#feature-tab" data-tab="tab-opera">人员管理</a></li>
+                            <li><a href="#feature-tab" data-tab="tab-ie">数据管理</a></li>
+                        </ul>
+                </li>
+				<li><a href="#summary-container">开发合作</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">客户项目</a></li>
+                <li><a href="#summary-container">关于我们</a></li>
+            </ul>
+		</div>
+		
+    </div>
+</div>
+
+
+<!-- 广告轮播 -->
+<div class="carousel-container">
+	<div id="ad-carousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#ad-carousel" data-slide-to="1"></li>
+			<li data-target="#ad-carousel" data-slide-to="2"></li>
+			<li data-target="#ad-carousel" data-slide-to="3"></li>
+			<li data-target="#ad-carousel" data-slide-to="4"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<img class="img-responsive" src="images/first.png" alt="1 slide">
+			</div>
+			<div class="item">
+				<img class="img-responsive" src="images/first.png" alt="2 slide">     
+			</div>
+			<div class="item">
+				<img class="img-responsive" src="images/first.png" alt="3 slide">
+			</div>
+			<div class="item">
+				<img class="img-responsive" src="images/first.png" alt="4 slide">
+			</div>
+			<div class="item">
+				<img class="img-responsive" src="images/first.png" alt="5 slide">
+			</div>
+		</div>
+		<a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span
+				class="glyphicon glyphicon-chevron-left"></span></a>
+		<a class="right carousel-control" href="#ad-carousel" data-slide="next"><span
+				class="glyphicon glyphicon-chevron-right"></span></a>
+	</div>
+</div>
+
+
+
+<!-- 主要内容 -->
+<div class="intro">
+	<div class="intro_title">
+		<h2>物联网是什么</h2>
+	</div>
+	<div class="intro_main">
+		<div class="intro_content">
+			<div class="intro_content_left"></div>
+			<div class="intro_content_mid">
+				<h3>What is the Internet of things?</h3>
+			</div>
+			<div class="intro_content_right"></div>
+		</div>
+	</div>
+</div>
+<div class="product">
+	<div class="product_main">
+		<div class="product_main_img">
+			<img src="images\插入图片.png" alt="1">
+		</div>
+		<div class="product_main_title">
+			<h3>设备接入</h3>
+			<img src="images/分割线.png" style="width:100%" alt="11">
+		</div>
+		<div class="product_main_text">
+			<h4>物联云平台，可以接入市场绝大多数数字/模拟采集设备，兼容性高。</h4>
+		</div>
+	</div>
+	<div class="product_main">
+		<div class="product_main_img">
+			<img src="images\插入图片.png" alt="2">
+		</div>
+		<div class="product_main_title">
+			<h3>设备管理</h3>
+			<img src="images/分割线.png" style="width:100%" alt="22">
+		</div>
+		<div class="product_main_text">
+			<h4>可视化设备管理后台，让设备管理更加轻松高效。</h4>
+		</div>
+	</div>
+	<div class="product_main">
+		<div class="product_main_img">
+			<img src="images\插入图片.png" alt="3">
+		</div>
+		<div class="product_main_title">
+			<h3>设备适配器</h3>
+			<img src="images/分割线.png" style="width:100%" alt="33">
+		</div>
+		<div class="product_main_text">
+			<h4>自定义设备适配器，将不同设备返回的不同的数据结果规范化。</h4>
+		</div>
+	</div>
+	<div class="product_main">
+		<div class="product_main_img">
+			<img src="images\插入图片.png" alt="4">
+		</div>
+		<div class="product_main_title">
+			<h3>人员管理</h3>
+			<img src="images/分割线.png" style="width:100%" alt="44">
+		</div>
+		<div class="product_main_text">
+			<h4>多重人员较色，合理的权限设置，让人员管理更加方便。</h4>
+		</div>
+	</div>
+	<div class="product_main">
+		<div class="product_main_img">
+			<img src="images\插入图片.png" alt="5">
+		</div>
+		<div class="product_main_title">
+			<h3>数据管理</h3>
+			<img src="images/分割线.png" style="width:100%" alt="55">
+		</div>
+		<div class="product_main_text">
+			<h4>强大的数据管理功能，轻松应对海量数据，同事提供可视化图表显示，简洁直观。</h4>
+		</div>
+	</div>
+</div>
+
+<div class="vacant">
+	<div class="vacant_part"></div>
+</div>
+
+
+<div class="service_title">
+			<h2>应用场景</h2>
+</div>
+
+
+<div class="tab2">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<img src="images/ct2.png" class="auto img-responsive center-block" alt="">
+			</div>
+			<div class="text col-sm-6">
+				<img src="images\智慧城市.png" alt="zhcs"  class="auto img-responsive center-block">
+				<h1>智慧城市</h1>
+				<h3>异构系统互联、实时视频、异常报警、巡检维保、设备管理</h3>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="tab3">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6  tab3-left">
+				<img src="images/ct2.png" class="auto img-responsive center-block" alt="">
+			</div>
+			<div class="text col-sm-6 tab3-right">
+				<img src="images\工业4.0.png" alt="gy4.0" class="auto img-responsive center-block">
+				<h1>工业4.0</h1>
+				<h3>数据监测、实时视频、异常报警、巡检维保、设备管理</h3>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="tab2">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<img src="images/ct2.png" class="auto img-responsive center-block" alt="">
+			</div>
+			<div class="text col-sm-6">
+				<img src="images\智能硬件.png" alt="znyj" class="auto img-responsive center-block">
+				<h1>智能硬件</h1>
+				<h3>设备接入、设备管理、用户管理、异常报警</h3>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="tab3">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6  tab3-left">
+					<img src="images/ct2.png" class="auto img-responsive center-block" alt="">
+			</div>
+			<div class="text col-sm-6 tab3-right">
+				<img src="images\车联网.png" alt="clw"  class="auto img-responsive center-block">
+				<h1>车联网</h1>
+				<h3>设备接入、数据监测</h3>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div id="LoopDiv">
+	<input id="S_Num" type="hidden" value="8" />
+	<div id="starsIF" class="imageflow"> 
+		<img src="images/lb1.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/lb1.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/lb1.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/lb1.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/lb1.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/lb1.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/lb1.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/lb1.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/lb1.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/lb1.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/lb1.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+		<img src="images/lb1.png" longdesc="#" width="280" height="300" alt="Picture" /> 
+	</div>
+</div>
+
+
+<div class="contact">
+	<div class="contact_title">
+		<h2>联系我们</h2>
+	</div>
+	<div class="contact_way">
+
+		<div class="contact_way_main">
+			<div class="contact_way_main_img">
+				<img src="images\固话.png" alt="gh">
+				<h3>固话</h3>
+			</div>
+			<div class="contact_way_main_text">
+				<h4>0551-65322901</h4>
+			</div>
+		</div>
+
+		<div class="contact_way_main">
+			<div class="contact_way_main_img">
+				<img src="images\邮箱.png" alt="yx">
+				<h3>邮箱</h3>
+			</div>
+			<div class="contact_way_main_text">
+				<h4>example@iotdata.com</h4>
+			</div>
+		</div>
+
+		<div class="contact_way_main">
+			<div class="contact_way_main_img">
+				<img src="images\地址.png" alt="gh">
+				<h3>地址</h3>
+			</div>
+			<div class="contact_way_main_text">
+				<h4>合肥国家大学科技园</h4>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="foot">
+	<div class="foot_img">
+		<img src="images\物联数据云.png" alt="wlsjy">
+	</div>
+	<div class="foot_text">
+		<span>皖ICP备13014211号-2<br>Copyright©IoData All Rights Reserved</span>
+	</div>
+	<div class="foot_vacant"></div>
+</div>
+
+<!-- 轮播1插件 -->
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- 轮播2插件 -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/imageflow.js"></script>
+
+
+
+
+</body>
+</html>
