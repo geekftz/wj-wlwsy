@@ -337,6 +337,13 @@ h4{
 	float:left;
 }
 
+.navbar-right .dropdown-menu{
+	background-color: #272c31;
+}
+
+.dropdown-menu{
+	min-width: 100%;
+}
 
 
 
