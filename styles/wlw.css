@@ -143,7 +143,7 @@ h4{
 .vacant_part{
 	height:400px;
 	width:70%;
-	background-color:rgb(255, 30, 100);
+	background-color:gray;
 }
 
 
@@ -468,6 +468,9 @@ h4{
 		font-size:24px;
 	}
 
+	.text{
+		padding:15px;
+	}
 	.text.col-sm-6.tab3-right h1{
 		font-size:30px;
 	}
@@ -477,11 +480,11 @@ h4{
 	}
 
 	.tab2{
-		padding:50px 20px;
+		padding:20px 20px;
 	}
 
 	.tab3{
-		padding:50px 20px;
+		padding:20px 20px;
 	}
 
 	.contact_title h2{
@@ -500,6 +503,14 @@ h4{
 		float:none;
 	}
 
-	
+	#dropdown-menu>li>a{
+		text-align: left;
+	}
+
+	.auto.img-responsive.center-block{
+		padding:15px;
+	}
+
+
 
 }
